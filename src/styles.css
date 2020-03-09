@@ -1,4 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 53px);
+}
+
+.main {
+
+}
+
+.wrapperExercise {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.exercise {
+  border: 2px solid #3f51b536;
+  border-radius: 4px;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1em;
+  vertical-align: top;
+}
+
+@media(min-width: 450px) {
+  .exercise {
+    width: 49%;
+  }
+
+  .exerciseLeft {
+    margin-right: 1%;
+  }
+
+  .exerciseRight {
+    margin-left: 1%;
+  }
+}
+
+
+.exerciseLeft {
+}
+
+.exerciseRight {
+}
+
+header.footer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header.header, header.footer {
+  padding: .5em 1em;
+  box-sizing: border-box;
+}
+
+button.buttonFooter {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exerciseSocketWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.exerciseSocket{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+  box-sizing: border-box;
+}
+
+.subTitle {
+  font-size: 18px;
+}
+
+.subTitleWrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.25em;
+  padding: .5em;
+  border-bottom: 2px solid #3f51b536;
+  box-sizing: border-box;
+}
+
+.exerciseDescription {
+  border: 2px solid #3f51b536;
+  border-radius: 4px;
+  padding: .5em;
+  box-sizing: border-box;
+}
+
+.exerciseDescription p {
+  margin-bottom: .5em;
+}
+
+.exerciseDescription li {
+  margin-bottom: .5em;
 }

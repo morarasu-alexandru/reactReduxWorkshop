@@ -3,15 +3,15 @@ import cloneDeep from "lodash.clonedeep";
 import { navigationActions } from "../actionTypes";
 
 export const pageKeys = {
-  home: "HOME",
-  first: "1",
-  second: "2",
-  third: "3",
-  forth: "4"
+  "0": "Home",
+  "1": "Exercise 1",
+  "2": "Exercise 2",
+  "3": "Exercise 3",
+  "4": "Exercise 4"
 };
 
 const initialState = {
-  page: pageKeys.home
+  page: pageKeys[1]
 };
 
 const navigationReducer = (state = initialState, action) => {
@@ -19,6 +19,9 @@ const navigationReducer = (state = initialState, action) => {
 
   switch (action.type) {
     case navigationActions.changePage: {
+      const {page} = action.payload;
+      newState.page = page;
+
       return newState;
     }
     default:

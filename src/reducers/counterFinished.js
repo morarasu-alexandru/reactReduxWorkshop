@@ -1,5 +1,5 @@
 import cloneDeep from "lodash.clonedeep";
-import {counterActions} from "../actionTypes";
+import {counterFinishedActions} from "../actionTypes";
 
 const initialState = {
   value: 0
@@ -9,8 +9,14 @@ const counterReducer = (state = initialState, action) => {
   const newState = cloneDeep(state);
 
   switch (action.type) {
-    case counterActions.decrement: {
+    case counterFinishedActions.decrement: {
       newState.value = state.value - 1;
+
+      return newState;
+    }
+
+    case counterFinishedActions.increment: {
+      newState.value = state.value + 1;
 
       return newState;
     }
