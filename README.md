@@ -1,2 +1,0 @@
-# reactReduxWorkshop
-Created with CodeSandbox
