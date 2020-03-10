@@ -24,3 +24,13 @@ export const inputActions = {
 export const inputFinishedActions = {
   changeInputFinished: "INPUT--CHANGE-INPUT-FINISHED"
 };
+
+export const todoActions = {
+  changeTodoInput: "TODO--CHANGE-INPUT",
+  addTodoToList: "TODO--ADD-TODO-TO-LIST"
+};
+
+export const todoFinishedActions = {
+  changeTodoInputFinished: "TODO--CHANGE-INPUT-FINISHED",
+  addTodoToListFinished: "TODO--ADD-TODO-TO-LIST-FINISHED"
+};

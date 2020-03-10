@@ -6,6 +6,7 @@ import counterFinishedReducer from "./counterFinished";
 import inputReducer from "./input";
 import inputFinishedReducer from "./inputFinished";
 import solvingStepsReducer from "./solvingSteps";
+import todoFinishedReducer from "./todoFinished";
 
 const rootReducer = combineReducers({
   navigation: navigationReducer,
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
   input: inputReducer,
   inputFinished: inputFinishedReducer,
   solvingSteps: solvingStepsReducer,
+  todoFinished: todoFinishedReducer,
 });
 
 export default rootReducer;

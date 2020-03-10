@@ -4,6 +4,6 @@ export const updateLocalStorageSteps = (steps) => {
   localStorage.setItem(stepsKey, JSON.stringify(steps))
 };
 
-export const getLocalStorageSteps = (steps) => {
+export const getLocalStorageSteps = () => {
   return JSON.parse(localStorage.getItem(stepsKey))
 };

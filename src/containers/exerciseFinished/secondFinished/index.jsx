@@ -1,7 +1,7 @@
 import React from 'react';
 import ExerciseSocket from "../../../components/exerciseSocket";
 import {useDispatch, useSelector} from "react-redux";
-import {changeInputFinished} from "../../../actions/inputFinished";
+import {changeTodoInputFinished} from "../../../actions/inputFinished";
 
 const SecondExercise = () => {
   const inputValue = useSelector(state => state.inputFinished.value);
@@ -11,12 +11,12 @@ const SecondExercise = () => {
   const handleChangeAction = (event) => {
     console.log(event.target.value);
 
-    dispatch(changeInputFinished(event.target.value));
+    dispatch(changeTodoInputFinished(event.target.value));
   };
 
   return (
     <ExerciseSocket title="Input Exercise Finished">
-      <div className="inputContainer">
+      <div className="socketContainer">
         <div>
           <span>Input: </span>
           <input value={inputValue} onChange={handleChangeAction} type="text"/>

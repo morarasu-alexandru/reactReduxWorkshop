@@ -12,7 +12,7 @@ const SecondExerciseFinished = () => {
 
   return (
     <ExerciseSocket title="Input Exercise">
-      <div className="inputContainer">
+      <div className="socketContainer">
         <div>
           <span>Input: </span>
           <input value={inputValue} onChange={handleChangeAction} type="text"/>

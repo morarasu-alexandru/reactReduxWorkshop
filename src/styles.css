@@ -114,12 +114,12 @@ button.buttonFooter {
   margin-bottom: .5em;
 }
 
-.inputContainer {
+.socketContainer {
   display: flex;
   flex-direction: column;
 }
 
-.inputContainer div {
+.socketContainer div {
   margin-bottom: .5em;
 }
 

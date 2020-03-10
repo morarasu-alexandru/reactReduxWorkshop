@@ -11,7 +11,7 @@ export const pageKeys = {
 };
 
 const initialState = {
-  page: pageKeys[2]
+  page: pageKeys[3]
 };
 
 const navigationReducer = (state = initialState, action) => {

@@ -14,6 +14,10 @@ const initialState = {
     {step: "2. Import 'changeInput' action from src/actions/input.js on the component | (same path as above)", isDone: false},
     {step: "3. Dispatch the action within the function 'handleChangeAction' and pass the correct argument | (same path as above)", isDone: false},
     {step: "4. We will notice that will still not work, we have to treat the case we have dispatched the 'changeInput' action within the input reducer | (src/reducers/input.js)", isDone: false}
+  ],
+  "3": [
+    {step: "1. First step", isDone: false},
+    {step: "2. Second step", isDone: false},
   ]
 };
 

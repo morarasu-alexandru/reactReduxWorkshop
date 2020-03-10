@@ -9,12 +9,13 @@ import Header from "../containers/header";
 import SecondPage from "../pages/second";
 import {getLocalStorageSteps} from "../utils/localStorage";
 import {updateSteps} from "../actions/solvingSteps";
+import ThirdPage from "../pages/third";
 
 const CustomRouter = () => {
   const page = useSelector(state => state.navigation.page);
   const dispatch = useDispatch();
 
-  useEffect(() => {console.log('once');
+  useEffect(() => {
     const localStorageSteps = getLocalStorageSteps();
 
     if(localStorageSteps) dispatch(updateSteps(localStorageSteps))
@@ -30,6 +31,9 @@ const CustomRouter = () => {
 
       case pageKeys[2]:
         return <SecondPage/>;
+
+      case pageKeys[3]:
+        return <ThirdPage/>;
 
       default:
         return <HomePage/>;
