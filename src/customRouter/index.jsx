@@ -1,11 +1,12 @@
 import React, {Fragment} from "react";
 import {useSelector} from "react-redux";
 
-import Home from "../pages/home";
-import First from "../pages/first";
+import HomePage from "../pages/home";
+import FirstPage from "../pages/first";
 import {pageKeys} from "../reducers/navigation";
 import Footer from "../containers/footer";
 import Header from "../containers/header";
+import SecondPage from "../pages/second";
 
 const CustomRouter = () => {
   const page = useSelector(state => state.navigation.page);
@@ -13,17 +14,18 @@ const CustomRouter = () => {
   const renderSwitchPage = page => {
     switch (page) {
       case pageKeys[0]:
-        return <Home/>;
+        return <HomePage/>;
 
       case pageKeys[1]:
-        return <First/>;
+        return <FirstPage/>;
+
+      case pageKeys[2]:
+        return <SecondPage/>;
 
       default:
-        return <Home/>;
+        return <HomePage/>;
     }
   };
-
-  console.log("page: ", page);
 
   return <Fragment>
     <Header/>

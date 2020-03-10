@@ -4,14 +4,14 @@ import { navigationActions } from "../actionTypes";
 
 export const pageKeys = {
   "0": "Home",
-  "1": "Exercise 1",
-  "2": "Exercise 2",
-  "3": "Exercise 3",
-  "4": "Exercise 4"
+  "1": "Exercise 1: Counter",
+  "2": "Exercise 2: Input",
+  "3": "Exercise 3: Todo List",
+  "4": "Exercise 4: "
 };
 
 const initialState = {
-  page: pageKeys[1]
+  page: pageKeys[2]
 };
 
 const navigationReducer = (state = initialState, action) => {

@@ -113,3 +113,16 @@ button.buttonFooter {
 .exerciseDescription li {
   margin-bottom: .5em;
 }
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer div {
+  margin-bottom: .5em;
+}
+
+.instructionsItem {
+  cursor: pointer;
+}
