@@ -5,3 +5,7 @@ export const toggleStepIsDone = (listNumber, itemIndex) => ({
   payload: {listNumber, itemIndex}
 });
 
+export const updateSteps = (steps) => ({
+  type: solvingStepsActions.updateSteps,
+  payload: {steps}
+});

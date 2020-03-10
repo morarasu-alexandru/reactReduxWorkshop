@@ -17,8 +17,6 @@ const initialState = {
   ]
 };
 
-// todo: set the state to local storage saved steps .... on component did mount
-
 const solvingSteps = (state = initialState, action) => {
   const newState = cloneDeep(state);
 
@@ -30,6 +28,12 @@ const solvingSteps = (state = initialState, action) => {
       updateLocalStorageSteps(newState);
 
       return newState;
+    }
+
+    case solvingStepsActions.updateSteps: {
+      const {steps} = action.payload;
+
+      return steps;
     }
 
     default:

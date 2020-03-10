@@ -3,9 +3,6 @@ import React from 'react';
 const InstructionsList = (props) => {
   const {list, toggleStepIsDoneAction} = props;
 
-  console.log('list: ', list);
-
-
   return (
     <ul>
       {list.map((item, index) =>

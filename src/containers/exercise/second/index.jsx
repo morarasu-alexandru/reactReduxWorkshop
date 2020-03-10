@@ -3,7 +3,6 @@ import ExerciseSocket from "../../../components/exerciseSocket";
 import {useSelector} from "react-redux";
 
 const SecondExerciseFinished = () => {
-
   const inputValue = useSelector(state => state.input.value);
 
   const handleChangeAction = (event) => {
