@@ -16,9 +16,16 @@ const initialState = {
     {step: "4. We will notice that will still not work, we have to treat the case we have dispatched the 'changeInput' action within the input reducer | (src/reducers/input.js)", isDone: false}
   ],
   "3": [
+    {step: "1. Create addTodo action using as action type | (src/actions/todo.js) ", isDone: false},
+    {step: "2. Handle addTodo case in reducer | (src/actions/todo.js)", isDone: false},
+    {step: "3. Create addTodoAction function that dispatches the action | (src/containers/exercise/third/index.jsx)", isDone: false},
+    {step: "4. Add to onClick the function created | (same path as above)", isDone: false},
+  ],
+  "4": [
     {step: "1. First step", isDone: false},
     {step: "2. Second step", isDone: false},
   ]
+
 };
 
 const solvingSteps = (state = initialState, action) => {

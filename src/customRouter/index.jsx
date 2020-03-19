@@ -7,19 +7,29 @@ import {pageKeys} from "../reducers/navigation";
 import Footer from "../containers/footer";
 import Header from "../containers/header";
 import SecondPage from "../pages/second";
-import {getLocalStorageSteps} from "../utils/localStorage";
+import { getLocalStoragePage, getLocalStorageSteps } from "../utils/localStorage";
 import {updateSteps} from "../actions/solvingSteps";
 import ThirdPage from "../pages/third";
+import { changePage } from "../actions/navigation";
+import ForthPage from "../pages/forth";
 
 const CustomRouter = () => {
   const page = useSelector(state => state.navigation.page);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    const localStorageSteps = getLocalStorageSteps();
+  // useEffect(() => {
+  //   const localStorageSteps = getLocalStorageSteps();
+  //
+  //   if(localStorageSteps) dispatch(updateSteps(localStorageSteps))
+  // }, []);
 
-    if(localStorageSteps) dispatch(updateSteps(localStorageSteps))
-  }, []);
+  useEffect(() => {
+    const localStoragePage = getLocalStoragePage();
+
+    if (localStoragePage) {
+      dispatch(changePage(localStoragePage))
+    }
+  },[]);
 
   const renderSwitchPage = page => {
     switch (page) {
@@ -34,6 +44,9 @@ const CustomRouter = () => {
 
       case pageKeys[3]:
         return <ThirdPage/>;
+
+      case pageKeys[4]:
+        return <ForthPage/>;
 
       default:
         return <HomePage/>;

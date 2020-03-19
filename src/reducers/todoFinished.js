@@ -3,7 +3,7 @@ import {todoFinishedActions} from "../actionTypes";
 
 const initialValue = {
   input: '',
-  list: ['throw garbage', 'feed cat', 'go to gym']
+  list: ['throw garbage', 'feed cat', 'go to gym', 'test1', 'test2', 'test3', 'test4', 'test5', 'test6', 'test7']
 };
 
 const todoFinishedReducer = (state = initialValue, action) => {

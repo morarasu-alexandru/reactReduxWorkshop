@@ -7,6 +7,9 @@ import inputReducer from "./input";
 import inputFinishedReducer from "./inputFinished";
 import solvingStepsReducer from "./solvingSteps";
 import todoFinishedReducer from "./todoFinished";
+import todoReducer from "./todo";
+import postsFinishedReducer from "./postsFinished";
+import postsReducer from "./posts";
 
 const rootReducer = combineReducers({
   navigation: navigationReducer,
@@ -16,6 +19,9 @@ const rootReducer = combineReducers({
   inputFinished: inputFinishedReducer,
   solvingSteps: solvingStepsReducer,
   todoFinished: todoFinishedReducer,
+  todo: todoReducer,
+  postsFinished: postsFinishedReducer,
+  posts: postsReducer,
 });
 
 export default rootReducer;

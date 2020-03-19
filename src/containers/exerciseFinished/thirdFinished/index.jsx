@@ -2,8 +2,9 @@ import React from 'react';
 import Button from "@material-ui/core/Button";
 
 import ExerciseSocket from "../../../components/exerciseSocket";
-import {useDispatch, useSelector} from "react-redux";
-import {addTodoFinished, changeTodoInputFinished} from "../../../actions/todoFinished";
+import { useDispatch, useSelector } from "react-redux";
+import { addTodoFinished, changeTodoInputFinished } from "../../../actions/todoFinished";
+import TodoItem from "../../../components/todoItem";
 
 const ThirdExerciseFinished = () => {
   const todoValue = useSelector(state => state.todoFinished.input);
@@ -24,7 +25,7 @@ const ThirdExerciseFinished = () => {
         </div>
         <div>
           <ul>
-            {todoList.map((todo, index) => <li key={index}>{index + 1}. {todo}</li>)}
+            {todoList.map((todo, index) => <TodoItem key={index} todo={todo}/>)}
           </ul>
         </div>
       </div>

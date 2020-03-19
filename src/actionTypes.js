@@ -1,5 +1,5 @@
 export const navigationActions = {
-  changePage: "NAVIGATION--CHANGE-PAGE"
+  changePage: "NAVIGATION--CHANGE-PAGE",
 };
 
 export const solvingStepsActions = {
@@ -33,4 +33,14 @@ export const todoActions = {
 export const todoFinishedActions = {
   changeTodoInputFinished: "TODO--CHANGE-INPUT-FINISHED",
   addTodoToListFinished: "TODO--ADD-TODO-TO-LIST-FINISHED"
+};
+
+export const postsActions = {
+  getPosts: "POSTS--GET",
+  getPostsFulfilled: "POSTS--GET-FULFILLED"
+};
+
+export const postsFinishedActions = {
+  getPosts: "POSTS--GET-FINISHED",
+  getPostsFulfilled: "POSTS--GET-FULFILLED-FINISHED"
 };

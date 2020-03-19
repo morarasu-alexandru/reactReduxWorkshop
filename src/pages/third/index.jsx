@@ -9,7 +9,6 @@ import ThirdExercise from "../../containers/exercise/third";
 
 const ThirdPage = () => {
   const instructionsList = useSelector(state => state.solvingSteps["3"]);
-
   const dispatch = useDispatch();
 
   const toggleStepIsDoneAction = (itemIndex) => dispatch(toggleStepIsDone( "3", itemIndex));
@@ -17,7 +16,7 @@ const ThirdPage = () => {
   return (
     <PageTemplate>
       <Fragment>
-        <p>We want something?</p>
+        <p>The input is working, the data is stored in the redux store, but the add button is not working.</p>
         <p>Solving steps: </p>
         <InstructionsList
           list={instructionsList}
