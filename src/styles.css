@@ -126,3 +126,16 @@ button.buttonFooter {
 .instructionsItem {
   cursor: pointer;
 }
+
+.animationContainer {
+  width: 100%;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.animationElement {
+  width: 50px;
+  height: 50px;
+  background: cadetblue;
+  border-radius: 4px;
+}

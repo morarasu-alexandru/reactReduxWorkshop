@@ -44,3 +44,11 @@ export const postsFinishedActions = {
   getPosts: "POSTS--GET-FINISHED",
   getPostsFulfilled: "POSTS--GET-FULFILLED-FINISHED"
 };
+
+export const animationActions = {
+  changeAnimateValue: "ANIMATE--CHANGE-VALUE"
+};
+
+export const animationFinishedActions = {
+  changeAnimateValue: "ANIMATE--CHANGE-VALUE-FINISHED"
+};

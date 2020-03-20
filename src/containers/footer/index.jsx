@@ -38,7 +38,7 @@ const Footer = () => {
         className="buttonFooter"
         variant="contained"
         color="secondary"
-        disabled={page === pageKeys[4]}
+        disabled={page === pageKeys[5]}
         endIcon={<NavigateNextIcon />}>
         Next
       </Button>

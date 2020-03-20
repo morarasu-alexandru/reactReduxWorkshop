@@ -10,6 +10,8 @@ import todoFinishedReducer from "./todoFinished";
 import todoReducer from "./todo";
 import postsFinishedReducer from "./postsFinished";
 import postsReducer from "./posts";
+import animationFinished from "./animationFinished";
+import animation from "./animation";
 
 const rootReducer = combineReducers({
   navigation: navigationReducer,
@@ -22,6 +24,8 @@ const rootReducer = combineReducers({
   todo: todoReducer,
   postsFinished: postsFinishedReducer,
   posts: postsReducer,
+  animateFinished: animationFinished,
+  animate: animation,
 });
 
 export default rootReducer;

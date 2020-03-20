@@ -28,7 +28,7 @@ const ForthExerciseFinished = () => {
   };
 
   return (
-    <ExerciseSocket title="Todo list Exercise">
+    <ExerciseSocket title="Get posts Exercise Finished">
       <div className="socketContainer">
         <div style={{marginBottom: '10px'}}>
           <Button onClick={getData} variant="outlined" size="small">

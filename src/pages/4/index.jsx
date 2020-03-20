@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import PageTemplate from "../../components/pageTemplate";
 import InstructionsList from "../../components/instructionsList";
 import { toggleStepIsDone } from "../../actions/solvingSteps";
-import ForthExercise from "../../containers/exercise/forth";
-import ForthExerciseFinished from "../../containers/exerciseFinished/forthFinished";
+import ForthExercise from "../../containers/exercise/4";
+import ForthExerciseFinished from "../../containers/exerciseFinished/4";
 
 const ForthPage = () => {
   const instructionsList = useSelector(state => state.solvingSteps["4"]);

@@ -13,14 +13,16 @@ const ForthExercise = () => {
   const dispatch = useDispatch();
 
   const getData = () => {
+    // no data, we have to start the loading
     getComments()
       .then((data) => {
         console.log('data: ', data);
+        // now we have data, we should stop loading
       })
   };
 
   return (
-    <ExerciseSocket title="Todo list Exercise">
+    <ExerciseSocket title="Get posts Exercise">
       <div className="socketContainer">
         <div style={{marginBottom: '10px'}}>
           <Button onClick={getData} variant="outlined" size="small">
