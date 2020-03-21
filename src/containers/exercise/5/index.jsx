@@ -43,7 +43,7 @@ const FifthExercise = () => {
           </div>
           <div>
             <Button onClick={decrementAction} variant={"outlined"}>-</Button>
-            <span>{counterValue}</span>
+            <span style={{margin: "0 10px"}}>{counterValue}</span>
             <Button onClick={incrementAction} variant={"outlined"}>+</Button>
           </div>
         </div>

@@ -18,11 +18,11 @@ const CustomRouter = () => {
   const page = useSelector(state => state.navigation.page);
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   const localStorageSteps = getLocalStorageSteps();
-  //
-  //   if(localStorageSteps) dispatch(updateSteps(localStorageSteps))
-  // }, []);
+  useEffect(() => {
+    const localStorageSteps = getLocalStorageSteps();
+
+    if(localStorageSteps) dispatch(updateSteps(localStorageSteps))
+  }, []);
 
   useEffect(() => {
     const localStoragePage = getLocalStoragePage();
