@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return <div className="homePageContainer">
     <div style={{marginBottom: '40px'}}>
-      <h1 style={{marginBottom: '20px'}}>Redux with React workshop</h1>
+      <h1 style={{marginBottom: '20px'}}>React with Redux workshop</h1>
       <img style={{maxHeight: '30vh'}} src={logo} alt="Redux Logo" />
     </div>
     <div>
