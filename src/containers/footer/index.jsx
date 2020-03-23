@@ -11,9 +11,6 @@ const Footer = () => {
   const dispatch = useDispatch();
   const page = useSelector(state => state.navigation.page);
 
-  console.log('page: ', page);
-
-
   const goPreviousPageAction = () => {
     const currentPageNumber = parseInt(Object.keys(pageKeys).find(key => pageKeys[key] === page));
 
@@ -27,29 +24,26 @@ const Footer = () => {
   };
 
   return <AppBar className="footer" position="static">
-    {
-      page !== pageKeys["0"] &&
-      <Fragment>
-        <Button
-          onClick={goPreviousPageAction}
-          className="buttonFooter"
-          variant="contained"
-          color="secondary"
-          disabled={page === pageKeys[0]}
-          startIcon={<NavigateBeforeIcon/>}>
-          Previous
-        </Button>
-        <Button
-          onClick={goNextPageAction}
-          className="buttonFooter"
-          variant="contained"
-          color="secondary"
-          disabled={page === pageKeys[5]}
-          endIcon={<NavigateNextIcon/>}>
-          Next
-        </Button>
-      </Fragment>
-    }
+    <Fragment>
+      <Button
+        onClick={goPreviousPageAction}
+        className="buttonFooter"
+        variant="contained"
+        color="secondary"
+        disabled={page === pageKeys[0]}
+        startIcon={<NavigateBeforeIcon/>}>
+        Previous
+      </Button>
+      <Button
+        onClick={goNextPageAction}
+        className="buttonFooter"
+        variant="contained"
+        color="secondary"
+        disabled={page === pageKeys[5]}
+        endIcon={<NavigateNextIcon/>}>
+        Next
+      </Button>
+    </Fragment>
   </AppBar>
 };
 

@@ -4,6 +4,8 @@ import { pageKeys } from "../../reducers/navigation";
 import { changePage } from "../../actions/navigation";
 import { useDispatch, useSelector } from "react-redux";
 
+import logo from '../../statics/img/reduxlogo.png';
+
 const HomePage = () => {
   const dispatch = useDispatch();
   const page = useSelector(state => state.navigation.page);
@@ -17,7 +19,7 @@ const HomePage = () => {
   return <div className="homePageContainer">
     <div style={{marginBottom: '40px'}}>
       <h1 style={{marginBottom: '20px'}}>Redux with React workshop</h1>
-      <p>There are 5 exercise</p>
+      <img style={{maxHeight: '30vh'}} src={logo} alt="Redux Logo" />
     </div>
     <div>
       <Button onClick={goNextPageAction} variant="contained" color="primary" size={"large"}>Start </Button>
