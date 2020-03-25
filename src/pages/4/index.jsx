@@ -16,7 +16,7 @@ const ForthPage = () => {
   return (
     <PageTemplate>
       <Fragment>
-        <p>We have a button 'Get data', we get the data, but we don't update the redux store.</p>
+        <p>We have a button 'Get data', we get the data if we press it. But it seems we don't update the state</p>
         <p>Also we need to see the loading until we get the data</p>
         <p>Solving steps: </p>
         <InstructionsList

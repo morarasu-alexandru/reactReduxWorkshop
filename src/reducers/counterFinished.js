@@ -6,16 +6,17 @@ const initialState = {
 };
 
 const counterReducer = (state = initialState, action) => {
-  const newState = cloneDeep(state);
 
   switch (action.type) {
     case counterFinishedActions.decrement: {
+      const newState = cloneDeep(state);
       newState.value = state.value - 1;
 
       return newState;
     }
 
     case counterFinishedActions.increment: {
+      const newState = cloneDeep(state);
       newState.value = state.value + 1;
 
       return newState;

@@ -17,10 +17,10 @@ const initialState = {
 };
 
 const navigationReducer = (state = initialState, action) => {
-  const newState = cloneDeep(state);
 
   switch (action.type) {
     case navigationActions.changePage: {
+      const newState = cloneDeep(state);
       const {page} = action.payload;
       newState.page = page;
 

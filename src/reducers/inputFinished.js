@@ -6,11 +6,11 @@ const initialState = {
 };
 
 const inputFinishedReducer = (state = initialState, action) => {
-  const newState = cloneDeep(state);
 
   switch (action.type) {
 
     case inputFinishedActions.changeInputFinished: {
+      const newState = cloneDeep(state);
       const {newValue} = action.payload;
 
       newState.value = newValue;

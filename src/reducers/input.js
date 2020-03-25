@@ -5,9 +5,10 @@ const initialState = {
 };
 
 const inputReducer = (state = initialState, action) => {
-  const newState = cloneDeep(state);
 
   switch (action.type) {
+
+    // const newState = cloneDeep(state);
 
     default:
       return state;

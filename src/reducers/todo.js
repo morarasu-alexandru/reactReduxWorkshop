@@ -1,16 +1,16 @@
 import cloneDeep from "lodash.clonedeep";
 import {todoActions} from "../actionTypes";
 
-const initialValue = {
+const initialState = {
   input: '',
   list: ['test1', 'test2', 'test3', 'test4', 'test5', 'test6', 'test7', 'throw garbage', 'feed cat', 'go to gym']
 };
 
-const todoReducer = (state = initialValue, action) => {
-  const newState = cloneDeep(state);
+const todoReducer = (state = initialState, action) => {
 
   switch (action.type) {
     case todoActions.changeTodoInput: {
+      const newState = cloneDeep(state);
       const {newValue} = action.payload;
 
       newState.input = newValue;

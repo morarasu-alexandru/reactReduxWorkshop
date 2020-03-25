@@ -17,7 +17,7 @@ const initialState = {
   ],
   "3": [
     {step: "1. Create addTodo action using as action type | (src/actions/todo.js) ", isDone: false},
-    {step: "2. Handle addTodo case in reducer | (src/actions/todo.js)", isDone: false},
+    {step: "2. Handle addTodo case in reducer | (src/reducers/todo.js)", isDone: false},
     {step: "3. Create addTodoAction function that dispatches the action | (src/containers/exercise/3/index.jsx)", isDone: false},
     {step: "4. Add to onClick the function created | (same path as above)", isDone: false},
   ],
@@ -36,10 +36,10 @@ const initialState = {
 };
 
 const solvingSteps = (state = initialState, action) => {
-  const newState = cloneDeep(state);
 
   switch (action.type) {
     case solvingStepsActions.toggleStepIsDone: {
+      const newState = cloneDeep(state);
       const {listNumber, itemIndex} = action.payload;
 
       newState[listNumber][itemIndex].isDone = !state[listNumber][itemIndex].isDone;
@@ -49,6 +49,7 @@ const solvingSteps = (state = initialState, action) => {
     }
 
     case solvingStepsActions.updateSteps: {
+      const newState = cloneDeep(state);
       const {steps} = action.payload;
 
       return steps;
