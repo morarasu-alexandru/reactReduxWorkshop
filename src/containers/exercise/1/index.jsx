@@ -1,7 +1,7 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import Button from '@material-ui/core/Button';
-import {decrement} from "../../../actions/counter";
+import {decrement} from "../../../actions/1/counter";
 import ExerciseSocket from "../../../components/exerciseSocket";
 
 const FirstExercise = () => {

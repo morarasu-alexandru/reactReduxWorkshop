@@ -4,7 +4,7 @@ import FirstExerciseResult from "../../containers/exerciseFinished/1";
 import PageTemplate from "../../components/pageTemplate";
 import {useDispatch, useSelector} from "react-redux";
 import InstructionsList from "../../components/instructionsList";
-import {toggleStepIsDone} from "../../actions/solvingSteps";
+import {toggleStepIsDone} from "../../actions/others/solvingSteps";
 
 const FirstPage = () => {
   const instructionList = useSelector(state => state.solvingSteps["1"]);

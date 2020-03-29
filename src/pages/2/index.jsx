@@ -5,7 +5,7 @@ import SecondExercise from "../../containers/exercise/2";
 import SecondExerciseFinished from "../../containers/exerciseFinished/2";
 import InstructionsList from "../../components/instructionsList";
 import {useDispatch, useSelector} from "react-redux";
-import {toggleStepIsDone} from "../../actions/solvingSteps";
+import {toggleStepIsDone} from "../../actions/others/solvingSteps";
 
 const SecondPage = () => {
   const instructionList = useSelector(state => state.solvingSteps["2"]);

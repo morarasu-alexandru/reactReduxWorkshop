@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 
 import ExerciseSocket from "../../../components/exerciseSocket";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodoFinished, changeTodoInputFinished } from "../../../actions/todoFinished";
+import { addTodoFinished, changeTodoInputFinished } from "../../../actions/3/todoFinished";
 import TodoItem from "../../../components/todoItem";
 
 const ThirdExerciseFinished = () => {

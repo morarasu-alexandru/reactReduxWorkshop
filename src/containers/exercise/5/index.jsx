@@ -2,9 +2,9 @@ import React from 'react';
 import Button from "@material-ui/core/Button";
 import ExerciseSocket from "../../../components/exerciseSocket";
 import { useDispatch, useSelector } from "react-redux";
-import { decrementFinished, incrementFinished } from "../../../actions/counterFinished";
+import { decrementFinished, incrementFinished } from "../../../actions/1/counterFinished";
 import { motion } from "framer-motion";
-import { changeAnimateValue } from "../../../actions/animate";
+import { changeAnimateValue } from "../../../actions/5/animate";
 
 const FifthExercise = () => {
   const animationValue = useSelector(state => state.animate.animateValue);

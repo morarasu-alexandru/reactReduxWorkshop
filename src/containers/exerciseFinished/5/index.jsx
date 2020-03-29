@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 import ExerciseSocket from "../../../components/exerciseSocket";
 import { useDispatch, useSelector } from "react-redux";
-import { changeAnimateValueFinished } from "../../../actions/animateFinished";
-import { decrementFinished, incrementFinished } from "../../../actions/counterFinished";
+import { changeAnimateValueFinished } from "../../../actions/5/animateFinished";
+import { decrementFinished, incrementFinished } from "../../../actions/1/counterFinished";
 
 const FifthExerciseFinished = () => {
   const animationValue = useSelector(state => state.animateFinished.animateValue);

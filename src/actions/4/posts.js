@@ -1,4 +1,4 @@
-import { postsActions } from "../actionTypes";
+import { postsActions } from "../../actionTypes";
 
 export const getPosts = () => ({
   type: postsActions.getPosts

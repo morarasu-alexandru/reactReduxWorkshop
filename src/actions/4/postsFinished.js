@@ -1,4 +1,4 @@
-import { postsFinishedActions } from '../actionTypes';
+import { postsFinishedActions } from '../../actionTypes';
 
 export const getPostsFinished = () => ({
   type: postsFinishedActions.getPosts

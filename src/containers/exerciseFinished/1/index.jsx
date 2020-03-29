@@ -1,7 +1,7 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import Button from '@material-ui/core/Button';
-import {decrementFinished, incrementFinished} from "../../../actions/counterFinished";
+import {decrementFinished, incrementFinished} from "../../../actions/1/counterFinished";
 import ExerciseSocket from "../../../components/exerciseSocket";
 
 const FirstExerciseResult = () => {

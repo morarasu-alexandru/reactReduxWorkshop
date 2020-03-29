@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import PageTemplate from "../../components/pageTemplate";
 import InstructionsList from "../../components/instructionsList";
-import {toggleStepIsDone} from "../../actions/solvingSteps";
+import {toggleStepIsDone} from "../../actions/others/solvingSteps";
 import ThirdExerciseFinished from "../../containers/exerciseFinished/3";
 import ThirdExercise from "../../containers/exercise/3";
 

@@ -1,4 +1,4 @@
-import { animationFinishedActions } from "../actionTypes";
+import { animationFinishedActions } from "../../actionTypes";
 
 export const changeAnimateValueFinished = (newValue) => ({
   type: animationFinishedActions.changeAnimateValue,

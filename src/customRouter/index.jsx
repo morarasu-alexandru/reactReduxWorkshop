@@ -3,14 +3,14 @@ import {useDispatch, useSelector} from "react-redux";
 
 import HomePage from "../pages/home";
 import FirstPage from "../pages/1";
-import {pageKeys} from "../reducers/navigation";
+import {pageKeys} from "../reducers/other/navigation";
 import Footer from "../containers/footer";
 import Header from "../containers/header";
 import SecondPage from "../pages/2";
 import { getLocalStoragePage, getLocalStorageSteps } from "../utils/localStorage";
-import {updateSteps} from "../actions/solvingSteps";
+import {updateSteps} from "../actions/others/solvingSteps";
 import ThirdPage from "../pages/3";
-import { changePage } from "../actions/navigation";
+import { changePage } from "../actions/others/navigation";
 import ForthPage from "../pages/4";
 import FithPage from "../pages/5";
 

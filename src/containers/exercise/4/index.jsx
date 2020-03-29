@@ -7,7 +7,7 @@ import { CircularProgress } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 
 const ForthExercise = () => {
-  const posts = useSelector(state => state.posts.posts);
+  const list = useSelector(state => state.posts.list);
   const isLoading = useSelector(state => state.posts.isLoading);
 
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ const ForthExercise = () => {
           {isLoading
             ? <CircularProgress />
             : <ul>
-              {posts.map((elem, index) => <li style={{marginBottom: '10px'}} key={index}> > {elem.body}</li>)}
+              {list.map((elem, index) => <li style={{marginBottom: '10px'}} key={index}> > {elem.body}</li>)}
             </ul>
           }
         </div>

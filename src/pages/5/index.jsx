@@ -5,7 +5,7 @@ import PageTemplate from "../../components/pageTemplate";
 import FifthExercise from "../../containers/exercise/5";
 import FifthExerciseFinished from "../../containers/exerciseFinished/5";
 import InstructionsList from "../../components/instructionsList";
-import { toggleStepIsDone } from "../../actions/solvingSteps";
+import { toggleStepIsDone } from "../../actions/others/solvingSteps";
 
 const FifthPage = () => {
   const instructionsList = useSelector(state => state.solvingSteps["5"]);

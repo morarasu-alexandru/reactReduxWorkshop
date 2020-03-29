@@ -1,9 +1,9 @@
 import cloneDeep from 'lodash.clonedeep';
 
-import { postsFinishedActions } from '../actionTypes'
+import { postsFinishedActions } from '../../actionTypes'
 
 const initialState = {
-  posts: [],
+  list: [],
   isLoading: false
 };
 

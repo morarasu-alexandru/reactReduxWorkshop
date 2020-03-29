@@ -4,8 +4,8 @@ import Button from '@material-ui/core/Button';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import { useDispatch, useSelector } from "react-redux";
-import { changePage } from "../../actions/navigation";
-import { pageKeys } from "../../reducers/navigation";
+import { changePage } from "../../actions/others/navigation";
+import { pageKeys } from "../../reducers/other/navigation";
 
 const Footer = () => {
   const dispatch = useDispatch();

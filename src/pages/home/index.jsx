@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import { pageKeys } from "../../reducers/navigation";
-import { changePage } from "../../actions/navigation";
+import { pageKeys } from "../../reducers/other/navigation";
+import { changePage } from "../../actions/others/navigation";
 import { useDispatch, useSelector } from "react-redux";
 
 import logo from '../../statics/img/reduxlogo.png';

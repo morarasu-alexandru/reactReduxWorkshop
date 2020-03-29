@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Button from '@material-ui/core/Button'
 
 import ExerciseSocket from "../../../components/exerciseSocket";
-import { changeTodoInput } from "../../../actions/todo";
+import { changeTodoInput } from "../../../actions/3/todo";
 import TodoItem from "../../../components/todoItem";
 
 const ThirdExercise = () => {

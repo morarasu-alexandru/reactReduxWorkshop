@@ -1,5 +1,5 @@
 import cloneDeep from 'lodash.clonedeep';
-import { animationActions } from "../actionTypes";
+import { animationFinishedActions } from "../../actionTypes";
 
 const initialState = {
   animateValue: {
@@ -8,11 +8,11 @@ const initialState = {
   }
 };
 
-const animation = (state = initialState, action) => {
+const animationFinished = (state = initialState, action) => {
 
   switch (action.type) {
 
-    case animationActions.changeAnimateValue: {
+    case animationFinishedActions.changeAnimateValue: {
       const newState = cloneDeep(state);
       const {newValue} = action.payload;
 
@@ -26,4 +26,4 @@ const animation = (state = initialState, action) => {
   }
 };
 
-export default animation;
+export default animationFinished;

@@ -4,11 +4,11 @@ import { getComments } from "../../../api";
 import Button from "@material-ui/core/Button";
 import { useDispatch, useSelector } from "react-redux";
 
-import { getPostsFinished, getPostsFulfilledFinished } from "../../../actions/postsFinished";
+import { getPostsFinished, getPostsFulfilledFinished } from "../../../actions/4/postsFinished";
 import { CircularProgress } from "@material-ui/core";
 
 const ForthExerciseFinished = () => {
-  const posts = useSelector(state => state.postsFinished.posts);
+  const list = useSelector(state => state.postsFinished.list);
   const isLoading = useSelector(state => state.postsFinished.isLoading);
 
   const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const ForthExerciseFinished = () => {
           {isLoading
             ? <CircularProgress />
             : <ul>
-              {posts.map((elem, index) => <li style={{marginBottom: '10px'}} key={index}> > {elem.body}</li>)}
+              {list.map((elem, index) => <li style={{marginBottom: '10px'}} key={index}> > {elem.body}</li>)}
             </ul>
           }
         </div>
